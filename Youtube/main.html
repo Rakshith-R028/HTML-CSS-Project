@@ -7,96 +7,49 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/video.css" />
     <title>Youtube</title>
-    <style>
-      p {
-        font-family: Roboto, Arial;
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-
-      .thumbnail {
-        width: 100%;
-        /* display: block; */
-      }
-
-      .search-bar {
-        display: block;
-      }
-
-      .video-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 16px;
-        row-gap: 40px;
-      }
-
-      .video-title {
-        margin-top: 0;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 20px;
-        margin-bottom: 12px;
-      }
-
-      .video-author,
-      .video-stats {
-        font-size: 12px;
-        color: rgb(96, 96, 96);
-      }
-
-      .video-author {
-        margin-bottom: 4px;
-      }
-      /* 
-      .video-stats {
-        font-size: 12px;
-        color: rgb(96, 96, 96);
-      } */
-
-      /* .video-preview {
-        width: 300px;
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 15px;
-      } */
-
-      .video-info-grid {
-        display: grid;
-        grid-template-columns: 50px 1fr;
-      }
-
-      /* .channel-picture {
-        display: inline-block;
-        width: 50px;
-        vertical-align: top;
-      }
-
-      .video-info {
-        display: inline-block;
-        width: 200px;
-      } */
-
-      .profile-picture {
-        width: 40px;
-        border-radius: 50px;
-      }
-
-      .thumbnail-row {
-        margin-bottom: 12px;
-      }
-    </style>
   </head>
   <body>
-    <input class="search-bar" type="text" placeholder="Search" />
+    <div class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="img/header/hamburger-menu.svg" />
+        <img class="youtube-logo" src="img/header/youtube-logo.svg" />
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search" />
+        <button class="search-button">
+          <img class="search-icon" src="img/header/search.svg" />
+        </button>
+        <button class="voice-search-button">
+          <img
+            class="voice-search-icon"
+            src="img/header/voice-search-icon.svg"
+          />
+        </button>
+      </div>
+      <div class="right-section">
+        <img class="upload-icon" src="img/header/upload.svg" />
+        <img class="youtube-apps-icon" src="img/header/youtube-apps.svg" />
+        <img class="notifications-icon" src="img/header/notifications.svg" />
+        <img class="current-user-picture" src="img/channels/my-channel.jpeg" />
+      </div>
+    </div>
+
     <div class="video-grid">
       <div class="video-preview">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="img/thumbnail-1.webp" alt="tittle" />
+          <img
+            class="thumbnail"
+            src="img/thumbnails/thumbnail-1.webp"
+            alt="tittle"
+          />
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
-            <img class="profile-picture" src="img/channel-1.jpeg" />
+            <img class="profile-picture" src="img/channels/channel-1.jpeg" />
           </div>
           <div class="video-info">
             <p class="video-title">
@@ -109,11 +62,15 @@
       </div>
       <div class="video-preview">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="img/thumbnail-2.webp" alt="tittle" />
+          <img
+            class="thumbnail"
+            src="img/thumbnails/thumbnail-2.webp"
+            alt="tittle"
+          />
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
-            <img class="profile-picture" src="img/channel-2.jpeg" />
+            <img class="profile-picture" src="img/channels/channel-2.jpeg" />
           </div>
           <div class="video-info">
             <p class="video-title">Try Not To Laugh Challenge #9</p>
@@ -124,11 +81,15 @@
       </div>
       <div class="video-preview">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="img/thumbnail-1.webp" alt="tittle" />
+          <img
+            class="thumbnail"
+            src="img/thumbnails/thumbnail-3.webp"
+            alt="tittle"
+          />
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
-            <img class="profile-picture" src="img/channel-1.jpeg" />
+            <img class="profile-picture" src="img/channels/channel-3.jpeg" />
           </div>
           <div class="video-info">
             <p class="video-title">
@@ -141,11 +102,15 @@
       </div>
       <div class="video-preview">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="img/thumbnail-2.webp" alt="tittle" />
+          <img
+            class="thumbnail"
+            src="img/thumbnails/thumbnail-4.webp"
+            alt="tittle"
+          />
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
-            <img class="profile-picture" src="img/channel-2.jpeg" />
+            <img class="profile-picture" src="img/channels/channel-4.jpeg" />
           </div>
           <div class="video-info">
             <p class="video-title">Try Not To Laugh Challenge #9</p>
@@ -156,11 +121,15 @@
       </div>
       <div class="video-preview">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="img/thumbnail-1.webp" alt="tittle" />
+          <img
+            class="thumbnail"
+            src="img/thumbnails/thumbnail-5.webp"
+            alt="tittle"
+          />
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
-            <img class="profile-picture" src="img/channel-1.jpeg" />
+            <img class="profile-picture" src="img/channels/channel-5.jpeg" />
           </div>
           <div class="video-info">
             <p class="video-title">
@@ -173,11 +142,15 @@
       </div>
       <div class="video-preview">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="img/thumbnail-2.webp" alt="tittle" />
+          <img
+            class="thumbnail"
+            src="img/thumbnails/thumbnail-6.webp"
+            alt="tittle"
+          />
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
-            <img class="profile-picture" src="img/channel-2.jpeg" />
+            <img class="profile-picture" src="img/channels/channel-6.jpeg" />
           </div>
           <div class="video-info">
             <p class="video-title">Try Not To Laugh Challenge #9</p>
